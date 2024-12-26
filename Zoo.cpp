@@ -9,9 +9,15 @@ Zoo::~Zoo() {
     for (int i = 0; i < animalCount; i++) {
         delete animals[i];
     }
+    delete this;
 }
 
 void Zoo::addAnimal(Animal* animal) {
+    if (this->animalCount >= 10) {
+        cout << "µ¿¹°¿øÀÌ °¡µæÃ¡½À´Ï´Ù." << endl;
+        return;
+    }
+
     this->animals[this->animalCount] = animal;
     this->animalCount++;
 }

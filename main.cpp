@@ -20,11 +20,10 @@ int main() {
         if (selNum == 3) zoo->performActions();
         if (selNum == 4) break;
 	}
-    delete zoo;
 }
 
 Animal* createRandomAnimal() {
-    srand(time(nullptr));
+    srand(time(nullptr) + rand());
 
     int animalNumber = rand() % 3;
 

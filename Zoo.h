@@ -13,11 +13,6 @@ private:
 public:
     Zoo();
     void addAnimal(Animal* animal);
-
-    // 동물원에 있는 모든 동물의 행동을 수행하는 함수
-    // - 모든 동물 객체에 대해 순차적으로 소리를 내고 움직이는 동작을 실행합니다.
-    // - 입력 매개변수: 없음
-    // - 반환값: 없음
     void performActions();
     void display();
     ~Zoo();
